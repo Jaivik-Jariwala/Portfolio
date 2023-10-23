@@ -1,4 +1,4 @@
-// src/compnents/Education.js
+// src/compnents/Navbar.js
 
 export default function Education(){
     
