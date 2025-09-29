@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Jaivik Jariwala</title>
+    <link rel="stylesheet" href="styles\style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/image.png" alt="Jaivik Jariwala Logo" onerror="this.outerHTML='<div style=\'width:45px;height:45px;border-radius:50%;background:#000;color:white;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:600;\'>JJ</div>'">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" data-key="navHome">Home</a></li>
+            <li><a href="#work" data-key="navWork">Work</a></li>
+            <li><a href="#projects" data-key="navProjects">Projects</a></li>
+            <li><a href="#skills" data-key="navSkills">Skills</a></li>
+            <li><a href="#services" data-key="navServices">Services</a></li>
+            <li><a href="#testimonials" data-key="navTestimonials">Testimonials</a></li>
+            <li><a href="#blog" data-key="navBlog">Blog</a></li>
+        </ul>
+        <div class="nav-actions">
+            <div class="language-toggle">
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="de">DE</button>
+                <button class="lang-btn" data-lang="hi">HI</button>
+                <button class="lang-btn" data-lang="gu">GU</button>
+            </div>
+             <div class="theme-switcher">
+                <input type="checkbox" id="dark-mode-toggle">
+                <label for="dark-mode-toggle" class="slider-label">
+                     <span class="sun-icon">☀️</span>
+                     <span class="moon-icon">🌙</span>
+                </label>
+            </div>
+            <a href="assets/Jaivik_Jariwala_Resume.pdf" download class="contact-btn" data-key="navResume">Download Resume</a>
+        </div>
+        <button class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </button>
+    </nav>
+
+    <div id="home" class="main-container">
+        <div class="content-wrapper">
+            <div class="greeting-section"><div class="greeting" id="animated-greeting"></div></div>
+            <div class="profession-section">
+                <div class="profession-title" id="profession-title"></div>
+                <div class="profession-subtitle" id="profession-subtitle"></div>
+                <div class="profession-description" id="profession-description"></div>
+            </div>
+            <div class="location-section">
+                <div class="location-title" id="location-title"></div>
+                <div class="location-description" id="location-description">
+                    <span class="location-text"></span>
+                    <span class="india-flag">🇮🇳</span>
+                </div>
+            </div>
+            <div class="main-title"><h1>Jaivik Jariwala</h1></div>
+        </div>
+        <div class="hero-image">
+            <img src="assets/hero-banner.jpg" alt="Jaivik Jariwala - AI Engineer" onerror="this.style.display='none'">
+        </div>
+    </div>
+
+    <section id="work" class="work-experience-section">
+        <div class="container">
+            <div class="section-header fade-in-section">
+                <h2 data-key="workTitle">My Work Experience</h2>
+                <p data-key="workSubtitle">A journey through impactful roles where I've applied AI, machine learning, and computer vision to solve real-world challenges.</p>
+            </div>
+            <div class="work-experience-grid">
+                <div class="project-card modal-trigger fade-in-section" data-modal-key="workModal1">
+                    <div class="project-image"><div class="project-placeholder"><img src="assets/MG.png" alt="JSW MG Motor"></div></div>
+                    <div class="project-content">
+                        <h3 data-key="work1Title">Artificial Intelligence Intern - JSW Morris Garages India Pvt. Ltd.</h3>
+                        <div class="project-tags">
+                            <span class="tag">VAVE</span>
+                            <span class="tag">Large Language Model</span>
+                            <span class="tag">RAG</span>
+                            <span class="tag">Big Data</span>
+                            <span class="tag">Cloud Computing</span>
+                            <span class="tag">DSA</span>
+                        </div>
+                        <p data-key="work1Desc">Engineered a Retrieval-Augmented Generation (RAG) multimodal chatbot by training DistilGPT (124M) for cost analysis and integrating Salesforce BLIP for vision-language understanding, optimized with Big Data pipelines and cloud computing infrastructure, resulting in significant cost saving over year via increasing vehicle teardown data collection and analysis.</p>
+                        <a href="https://drive.google.com/file/d/1iVI0N6tzT0Ga_vxoAO6EwEuBbkaTwrDs/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-card-link" data-key="viewCertificate">View Certificate</a>
+                    </div>
+                </div>
+                <div class="project-card modal-trigger fade-in-section" data-modal-key="workModal2">
+                    <div class="project-image"><div class="project-placeholder"><img src="assets/IA.png" alt="Indian Army emblem"></div></div>
+                    <div class="project-content">
+                        <h3 data-key="work2Title">Artificial Intelligence Product Engineering Intern - Maharishi Industries Private Limited</h3>
+                        <div class="project-tags">
+                            <span class="tag">Deep Learning</span>
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">Edge AI</span>
+                            <span class="tag">Software Engineering</span>
+                            <span class="tag">Sensor Fusion</span>
+                        </div>
+                        <p data-key="work2Desc">Designed and deployed a GPU-accelerated AI surveillance system on NVIDIA Jetson Orin, achieving 96% real-time accuracy and operational adoption by Indian Army units. Integrated vision-radar (BFSR) fusion with transformer-based object perception for border security along the Jammu and Kashmir LoC. Utilized RT-DETR, DepthAnythingV2, and D-FINE models with Flask-based web application for real-time streaming and alerts.</p>
+                        <a href="https://drive.google.com/file/d/1xYYLQgsuJLP7DtIahOcYiUAjZcj8L0NH/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-card-link" data-key="viewCertificate">View Certificate</a>
+                    </div>
+                </div>
+                <div class="project-card modal-trigger fade-in-section" data-modal-key="workModal3">
+                    <div class="project-image"><div class="project-placeholder"><img src="assets/IITB.png" alt="IIT Bombay"></div></div>
+                    <div class="project-content">
+                        <h3 data-key="work3Title">Summer Data Science Research Intern - Indian Institute of Technology, Bombay</h3>
+                        <div class="project-tags">
+                            <span class="tag">Statistical Analysis</span>
+                            <span class="tag">Data Processing</span>
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">Transportation Eng.</span>
+                            <span class="tag">Time Series</span>
+                        </div>
+                        <p data-key="work3Desc">Processed over 100GB of statistical and video data to predict vehicle driving behavior. I developed robust statistical models achieving 84% accuracy and implemented automated data preprocessing pipelines. This involved analyzing IMU data for overtaking event prediction, utilizing image processing and deep learning for vehicular distance estimation, and conducting statistical analysis of longitudinal acceleration to detect braking and acceleration events.</p>
+                        <a href="YOUR_CERTIFICATE_LINK_HERE" target="_blank" rel="noopener noreferrer" class="btn-card-link" data-key="viewCertificate">View Certificate</a>
+                    </div>
+                </div>
+                <div class="project-card modal-trigger fade-in-section" data-modal-key="workModal4">
+                    <div class="project-image"><div class="project-placeholder"><img src="assets/iNav.png" alt="iNav Labs"></div></div>
+                    <div class="project-content">
+                        <h3 data-key="work4Title">Autonomous Systems Intern - iNav Labs</h3>
+                        <div class="project-tags">
+                            <span class="tag">Robotics</span>
+                            <span class="tag">YOLOv8</span>
+                            <span class="tag">ROS</span>
+                            <span class="tag">Path Planning</span>
+                            <span class="tag">Jetson Nano</span>
+                        </div>
+                        <p data-key="work4Desc">Designed and implemented an advanced autonomous delivery robot pipeline, integrating YOLOv8 for precise object detection with RRT* path planning for optimized navigation. Achieved 96.4% precision in object recognition and a 60% reduction in task completion time by leveraging ROS on a Jetson Nano platform, enhanced with LiDAR and dual-camera systems for robust environmental mapping and real-time decision-making.</p>
+                        <a href="YOUR_CERTIFICATE_LINK_HERE" target="_blank" rel="noopener noreferrer" class="btn-card-link" data-key="viewCertificate">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header fade-in-section">
+                <h2 data-key="projectsTitle">Best Portfolio Projects of Mine...</h2>
+                <p data-key="projectsSubtitle">Showcasing my technical expertise through innovative projects that push the boundaries of AI, machine learning, and computer vision.</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card modal-trigger fade-in-section" data-modal-key="projectModal1">
+                    <div class="project-image"><div class="project-placeholder"><img src="assets/project-rag.png" alt="RAG Chatbot Project"></div></div>
+                    <div class="project-content">
+                        <h3 data-key="project1Title">RAG-based Multimodal Chatbot</h3>
+                        <div class="project-tags"><span class="tag">Machine Learning</span><span class="tag">GPT-2</span><span class="tag">Computer Vision</span></div>
+                        <p data-key="project1Desc">Developed at JSW MG Motor with Distill-GPT-2 and Salesforce BLIP, achieving cost analysis automation and identifying 12+ Cr in potential savings.</p>
+                    </div>
+                </div>
+                <div class="project-card modal-trigger fade-in-section" data-modal-key="projectModal2">
+                    <div class="project-image"><div class="project-placeholder"><div class="project-icon">🎯</div></div></div>
+                    <div class="project-content">
+                        <h3 data-key="project2Title">AI Surveillance System</h3>
+                        <div class="project-tags"><span class="tag">Deep Learning</span><span class="tag">RT-DETR</span><span class="tag">Edge Computing</span></div>
+                        <p data-key="project2Desc">GPU-accelerated threat detection system with 96% accuracy, deployed with Indian Army units using NVIDIA Jetson Orin for real-time processing.</p>
+                    </div>
+                </div>
+                <div class="project-card modal-trigger fade-in-section" data-modal-key="projectModal3">
+                    <div class="project-image"><div class="project-placeholder"><div class="project-icon">🚗</div></div></div>
+                    <div class="project-content">
+                        <h3 data-key="project3Title">Autonomous Delivery Robot</h3>
+                        <div class="project-tags"><span class="tag">YOLOv8</span><span class="tag">ROS</span><span class="tag">Path Planning</span></div>
+                        <p data-key="project3Desc">Integrated YOLOv8 object detection with RRT* path planning, achieving 96.4% precision and 60% improvement in task completion time.</p>
+                    </div>
+                </div>
+                <div class="project-card modal-trigger fade-in-section" data-modal-key="projectModal4">
+                    <div class="project-image"><div class="project-placeholder"><div class="project-icon">📊</div></div></div>
+                    <div class="project-content">
+                        <h3 data-key="project4Title">Real-time Video Analytics</h3>
+                        <div class="project-tags"><span class="tag">NVIDIA DeepStream</span><span class="tag">YOLOv7</span><span class="tag">AWS</span></div>
+                        <p data-key="project4Desc">Scalable object detection system using NVIDIA toolkits and AWS, reducing latency by 30% and increasing throughput with model quantization.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="research" class="research-section">
+        <div class="container">
+            <div class="section-header fade-in-section">
+                <h2 data-key="researchTitle">Research & Publications</h2>
+                <p data-key="researchSubtitle">Exploring new frontiers in AI and sharing my findings with the community.</p>
+            </div>
+            <div class="research-grid">
+                <div class="project-card modal-trigger fade-in-section" data-modal-key="researchModal1">
+                    <div class="project-image">
+                        <span class="status-tag published" data-key="statusPublished">Published</span>
+                        <div class="project-placeholder"><img src="assets/research/paper1.jpg" alt="Research Paper on Sensor Fusion"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-key="research1Title">Real-Time Autonomous Threat Detection using Sensor Fusion</h3>
+                        <p data-key="research1Desc">A novel architecture for fusing multimodal sensor data on edge devices for high-accuracy threat detection...</p>
+                        <p class="co-authors" data-key="research1Authors">Co-authors: Dr. Punit Gupta, Prof. Avijit Maji</p>
+                        <a href="YOUR_PAPER_LINK_HERE" target="_blank" rel="noopener noreferrer" class="btn-card-link" data-key="viewPaper">View Paper</a>
+                    </div>
+                </div>
+                <div class="project-card modal-trigger fade-in-section" data-modal-key="researchModal2">
+                    <div class="project-image">
+                        <span class="status-tag ongoing" data-key="statusOngoing">Ongoing</span>
+                         <div class="project-placeholder"><img src="assets/research/paper2.jpg" alt="Research Paper on RAG Pipelines"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-key="research2Title">Optimizing RAG Pipelines for Automotive Cost Analysis</h3>
+                        <p data-key="research2Desc">A study on improving the efficiency and accuracy of RAG systems for industrial applications...</p>
+                        <p class="co-authors" data-key="research2Authors">Co-authors: Mr. Sameer Jindal</p>
+                        <a href="YOUR_PAPER_LINK_HERE" target="_blank" rel="noopener noreferrer" class="btn-card-link" data-key="viewDraft">View Draft</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header fade-in-section">
+                <h2 data-key="skillsTitle">Technical Skills</h2>
+                <p data-key="skillsSubtitle">My toolbox of languages, frameworks, and platforms that I use to build, innovate, and solve complex problems.</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category fade-in-section">
+                    <h3 data-key="skillsLangDb">Languages & Databases</h3>
+                    <div class="skills-list">
+                        <div class="skill-item"><div class="skill-icon"><img src="assets/logo/Python.png" alt="Python"></div><span>Python</span></div>
+                        <div class="skill-item"><div class="skill-icon"><img src="assets/logo/C.png" alt="C++"></div><span>C/C++</span></div>
+                        <div class="skill-item"><div class="skill-icon"><img src="assets/logo/Linux.png" alt="Linux"></div><span>Linux/Kernel</span></div>
+                        <div class="skill-item"><div class="skill-icon"><img src="assets/logo/mongodb.png" alt="MongoDB"></div><span>MongoDB</span></div>
+                        <div class="skill-item"><div class="skill-icon"><img src="assets/logo/MySQL.png" alt="MySQL"></div><span>MySQL</span></div>
+                        <div class="skill-item"><div class="skill-icon"><img src="assets/logo/JavaScript.png" alt="JavaScript"></div><span>JavaScript</span></div>
+                        <div class="skill-item"><div class="skill-icon"><img src="assets/logo/HTML5.png" alt="HTML"></div><span>HTML</span></div>
+                        <div class="skill-item"><div class="skill-icon"><img src="assets/logo/CSS3.png" alt="CSS"></div><span>CSS</span></div>
+                        <div class="skill-item"><div class="skill-icon"><img src="assets/logo/R.png" alt="R Language"></div><span>R</span></div>
+                    </div>
+                </div>
+                <div class="skill-category fade-in-section">
+                    <h3 data-key="skillsAiMl">AI, ML & Data</h3>
+                    <div class="skills-list">
+                        <div class="skill-item"><div class="skill-icon"><img src="assets/logo/tensorflow.png" alt="TensorFlow"></div><span>TensorFlow</span></div>
+                        <div class="skill-item"><div class="skill-icon"><img src="assets/logo/pytorch.png" alt="PyTorch"></div><span>PyTorch</span></div>
+                        <div class="skill-item"><div class="skill-icon"><img src="assets/logo/keras.png" alt="Keras"></div><span>Keras</span></div>
+                        <div class="skill-item"><div class="skill-icon"><img src="assets/logo/scikit-learn.png" alt="Scikit-learn"></div><span>Scikit-learn</span></div>
+                        <div class="skill-item"><div class="skill-icon"><img src="assets/logo/opencv.png" alt="OpenCV"></div><span>OpenCV</span></div>
+                        <div class="skill-item"><div class="skill-icon"><img src="assets/logo/cuda.png" alt="Anaconda"></div><span>Anaconda</span></div>
+                        <div class="skill-item"><div class="skill-icon"><img src="assets/logo/hadoop.png" alt="Hadoop"></div><span>Hadoop</span></div>
+                    </div>
+                </div>
+                <div class="skill-category fade-in-section">
+                    <h3 data-key="skillsCloud">Cloud & DevOps</h3>
+                    <div class="skills-list">
+                        <div class="skill-item"><div class="skill-icon"><img src="assets/logo/aws.png" alt="AWS"></div><span>AWS</span></div>
+                        <div class="skill-item"><div class="skill-icon"><img src="assets/logo/gcp.png" alt="Google Cloud"></div><span>Google Cloud</span></div>
+                        <div class="skill-item"><div class="skill-icon"><img src="assets/logo/docker.png" alt="Docker"></div><span>Docker</span></div>
+                        <div class="skill-item"><div class="skill-icon"><img src="assets/logo/kubernetes.png" alt="Kubernetes"></div><span>Kubernetes</span></div>
+                        <div class="skill-item"><div class="skill-icon"><img src="assets/logo/spark.png" alt="Apache Spark"></div><span>Apache Spark</span></div>
+                        <div class="skill-item"><div class="skill-icon"><img src="assets/logo/kafka.png" alt="Apache Kafka"></div><span>Apache Kafka</span></div>
+                        <div class="skill-item"><div class="skill-icon"><img src="assets/logo/databricks.png" alt="Databricks"></div><span>Databricks</span></div>
+                    </div>
+                </div>
+                 <div class="skill-category fade-in-section">
+                    <h3 data-key="skillsDevTools">Developer Tools</h3>
+                    <div class="skills-list">
+                        <div class="skill-item"><div class="skill-icon"><img src="assets/logo/git.png" alt="Git"></div><span>Git</span></div>
+                        <div class="skill-item"><div class="skill-icon"><img src="assets/logo/github.png" alt="GitHub"></div><span>GitHub</span></div>
+                        <div class="skill-item"><div class="skill-icon"><img src="assets/logo/vscode.png" alt="VS Code"></div><span>VS Code</span></div>
+                        <div class="skill-item"><div class="skill-icon"><img src="assets/logo/jupyter.png" alt="Jupyter"></div><span>Jupyter</span></div>
+                        <div class="skill-item"><div class="skill-icon"><img src="assets/logo/ros.png" alt="ROS"></div><span>ROS</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="additional-skills">
+                <div class="skill-category fade-in-section">
+                    <h3 data-key="skillsCoursework">Relevant Coursework</h3>
+                    <div class="skills-list-prose">
+                        <span data-key="course1">Data Structures & Algorithms</span>
+                        <span data-key="course2">Artificial Intelligence</span>
+                        <span data-key="course3">Machine Learning</span>
+                        <span data-key="course4">Computer Vision</span>
+                        <span data-key="course5">Digital Image Processing</span>
+                        <span data-key="course6">Operating Systems</span>
+                        <span data-key="course7">Big Data (Kafka, Spark, Hadoop)</span>
+                        <span data-key="course8">Internet of Things</span>
+                    </div>
+                </div>
+                <div class="skill-category fade-in-section">
+                    <h3 data-key="skillsInterests">Areas of Interest</h3>
+                    <div class="skills-list-prose">
+                        <span data-key="interest1">AI & Robotics</span>
+                        <span data-key="interest2">GPU Optimization</span>
+                        <span data-key="interest3">Deep Learning Architecture</span>
+                        <span data-key="interest4">Research & Development</span>
+                        <span data-key="interest5">Data Science</span>
+                        <span data-key="interest6">Imaging Systems</span>
+                        <span data-key="interest7">Applied Mathematics</span>
+                    </div>
+                </div>
+                <div class="skill-category fade-in-section">
+                    <h3 data-key="skillsSoft">Soft Skills</h3>
+                    <div class="skills-list-prose">
+                        <span data-key="softSkill1">Creative Problem-Solving</span>
+                        <span data-key="softSkill2">Clear Communication</span>
+                        <span data-key="softSkill3">Self-Learning & Adaptability</span>
+                        <span data-key="softSkill4">Focus on Results</span>
+                        <span data-key="softSkill5">Technical Competence</span>
+                        <span data-key="softSkill6">Active Listening</span>
+                        <span data-key="softSkill7">Proactive Initiative</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education-section">
+        <div class="container">
+            <div class="section-header fade-in-section">
+                <h2 data-key="educationTitle">Education</h2>
+                <p data-key="educationSubtitle">My academics so far, and my ambition to aim higher with every degree and course I undertake.</p>
+            </div>
+            <div class="education-timeline" style="display: flex; flex-direction: column; gap: 40px;">
+                <div class="education-item fade-in-section" style="background: var(--bg-card); padding: 30px; border-radius: 15px; border: 1px solid var(--border-color); text-align: left;">
+                    <h3 data-key="educationDegree">Bachelor of Technology, Computer Science and Engineering</h3>
+                    <h4 data-key="educationUniversity">School of Technology, Pandit Deendayal Energy University</h4>
+                    <div class="education-meta">
+                        <span>2021 - 2025</span>
+                        <span>CGPA: 8.57</span>
+                    </div>
+                    <div class="education-links" style="margin-top: 20px; display: flex; gap: 15px; flex-wrap: wrap;">
+                        <a href="https://drive.google.com/file/d/19RNP77BIz3WD8e3Ji2mhf3tVJ4D7P3dn/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-card-link" style="margin-top:0;" data-key="viewThesis">View Thesis</a>
+                        <a href="https://drive.google.com/file/d/1XkNij9FRZnBApikraht_ZIICid9sPMqG/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-card-link" style="margin-top:0;" data-key="viewTranscript">View Transcript</a>
+                        <a href="https://drive.google.com/file/d/1l43kdhEqmEmFb7hPwY0O6_jiT9oRSpXd/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-card-link" style="margin-top:0;" data-key="viewDegree">View Degree</a>
+                    </div>
+                    <div class="education-gallery" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-top: 20px;">
+                        <img src="assets/pdeu.png" alt="PDEU Campus" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+                        <img src="assets/pdeu2.jpg" alt="PDEU Building" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+                        <img src="assets/pdeu event.png" alt="PDEU Event" style="width: 100%; height: 150px; object-fit: cover; border-radius: 8px;">
+                    </div>
+                </div>
+                <div class="education-item fade-in-section" style="background: var(--bg-card); padding: 30px; border-radius: 15px; border: 1px solid var(--border-color); text-align: left;">
+                    <h3 data-key="education12th">12th Grade Higher School Education</h3>
+                    <h4 data-key="educationBoard12">Gujarat State Education Board</h4>
+                    <div class="education-meta">
+                        <span data-key="educationPR12">Percentile Rank: 94.04%</span>
+                        <span data-key="educationGrade12">Grade: A1</span>
+                    </div>
+                    <div class="education-links" style="margin-top: 20px;">
+                        <a href="https://drive.google.com/file/d/1FNWENrugHLf-66_fyZ_O33ElVCLLHCro/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-card-link" style="margin-top:0;" data-key="viewCertificate">View Certificate</a>
+                    </div>
+                </div>
+                <div class="education-item fade-in-section" style="background: var(--bg-card); padding: 30px; border-radius: 15px; border: 1px solid var(--border-color); text-align: left;">
+                    <h3 data-key="education10th">10th Grade Higher Secondary School Education</h3>
+                    <h4 data-key="educationBoard10">Gujarat State Education Board</h4>
+                    <div class="education-meta">
+                        <span data-key="educationPct10">Percentage: 93%</span>
+                        <span data-key="educationGrade10">Grade: A2</span>
+                    </div>
+                    <div class="education-links" style="margin-top: 20px;">
+                        <a href="https://drive.google.com/file/d/1CuFUvCEByWOJ4Ty4c7i5yZHCXbb536GQ/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-card-link" style="margin-top:0;" data-key="viewCertificate">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="certifications-section">
+        <div class="container">
+            <div class="section-header fade-in-section">
+                <h2 data-key="certificationsTitle">Certifications & Training</h2>
+                <p data-key="certificationsSubtitle">My commitment to pursue continuous learning not limited to AI but Finance, Data Science, Machine learning, Mathematics, Management and other roles.</p>
+            </div>
+            <div class="certifications-grid">
+                <div class="cert-card fade-in-section">
+                    <h4 data-key="cert1Title">Machine Learning Specialization</h4>
+                    <p>DeepLearning.AI, Coursera, Stanford | June 2023</p>
+                    <a href="https://drive.google.com/file/d/1nqvIB-YLoH8v69LDEbBqzwftjg4Pxu4n/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-card-link" data-key="viewCertificate">View Certificate</a>
+                </div>
+                <div class="cert-card fade-in-section">
+                    <h4 data-key="cert2Title">Generative Adversarial Network (GANs) Specialization</h4>
+                    <p>DeepLearning.AI, Coursera | Aug 2023</p>
+                    <a href="https://drive.google.com/file/d/1wKCqyN50Jf5bR9YV8wwdZfAVp2bNYKp3/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-card-link" data-key="viewCertificate">View Certificate</a>
+                </div>
+                <div class="cert-card fade-in-section">
+                    <h4 data-key="cert3Title">Application of Statistics in Data Analysis</h4>
+                    <p>Pandit Deendayal Energy University | March 2023</p>
+                    <a href="https://drive.google.com/file/d/1K7jMWcgsry22tlwf9XK4Usbri5v3aZHZ/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-card-link" data-key="viewCertificate">View Certificate</a>
+                </div>
+                <div class="cert-card fade-in-section">
+                    <h4 data-key="cert4Title">Understanding Incubation and Entrepreneurship</h4>
+                    <p>Swayam NPTEL, IIT Bombay | April 2024</p>
+                    <a href="https://drive.google.com/file/d/1hyf9C6o5G6kcNKVyicHEs_teqsf3oqV4/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-card-link" data-key="viewCertificate">View Certificate</a>
+                </div>
+                <div class="cert-card fade-in-section">
+                    <h4 data-key="cert5Title">Bachelor of Technology Coursework</h4>
+                    <p>Pandit Deendayal Energy University | May 2025</p>
+                    <a href="https://drive.google.com/file/d/1XkNij9FRZnBApikraht_ZIICid9sPMqG/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-card-link" data-key="viewTranscript">View Transcript</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="memberships-section">
+        <div class="container">
+            <div class="section-header fade-in-section">
+                <h2 data-key="membershipsTitle">Community and Research Group Member</h2>
+                <p data-key="membershipsSubtitle">Engaging with professional and social welfare communities to stay at the forefront of technology and social service through my work, time and resources.</p>
+            </div>
+            <div class="memberships-grid">
+                <div class="membership-item fade-in-section">
+                    <h4>Institute of Electrical and Electronic Engineers (IEEE)</h4>
+                    <p>Student Member<br>Since July 2023</p>
+                </div>
+                <div class="membership-item fade-in-section">
+                    <h4>Society of Automobile Engineers (SAE)</h4>
+                    <p>Student Member<br>Since March 2024</p>
+                </div>
+                <div class="membership-item fade-in-section">
+                    <h4>EnviroFreaks - Environmental Club of PDEU</h4>
+                    <p>Member | President | Advisor<br>November 2021 - Dec 2024</p>
+                </div>
+                <div class="membership-item fade-in-section">
+                    <h4>Team Ragnar - SAEINDIA Student Formula Team</h4>
+                    <p>Head of Electronics & Data Acquisition | Advisor<br>October 2023 - Aug 2025<br>Rank 24th SAEINDIA SUPRA 2024 & 2025</p>
+                </div>
+                <div class="membership-item fade-in-section">
+                    <h4>Apogee³ - Aerospace Society of PDEU</h4>
+                    <p>Co-Founder | Head of Graphic Design<br>Aug 2023 - Sept 2024</p>
+                </div>
+                <div class="membership-item fade-in-section">
+                    <h4>Team Atlas - SAEINDIA Aerothon Team</h4>
+                    <p>Data Processing and Autonomous System Head<br>Jan 2024 - Dec 2024<br>Round 1 AIR 4</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="reviews-section">
+        <div class="container">
+            <div class="section-header fade-in-section">
+                <h2 data-key="testimonialsTitle">Words From My Mentors</h2>
+                <p data-key="testimonialsSubtitle">What industry leaders and professors say about my work ethic, technical contributions, and impact.</p>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-item modal-trigger fade-in-section" data-modal-key="testimonialModal1">
+                    <div class="review-content">
+                        <h4 data-key="testimonial1Quote">A catalyst for AI based cost reduction and workflow automation.</h4>
+                        <p data-key="testimonial1Desc">"Jaivik's work on multimodal RAG chatbot implementation has improvised our cost analysis process. His deep understanding of AI technologies and ability to deliver practical solutions from my vision in VAVE makes him an invaluable team member."</p>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">SJ</div>
+                            <div class="reviewer-info"><div class="reviewer-name">Mr. Sameer Jindal</div><div class="reviewer-title">Director, VAVE <br> JSW MG MOTOR India</div></div>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1iVI0N6tzT0Ga_vxoAO6EwEuBbkaTwrDs/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-card-link" data-key="viewRecommendation">View Recommendation</a>
+                    </div>
+                    <div class="review-image"><img src="assets/SameerJindal.png" alt="Mr. Sameer Jindal"></div>
+                </div>
+                <div class="review-item modal-trigger fade-in-section" data-modal-key="testimonialModal2">
+                    <div class="review-content">
+                        <h4 data-key="testimonial2Quote">A motivated young researcher.</h4>
+                        <p data-key="testimonial2Desc">"As his mentor at IIT Bombay, His statistical modeling approach to vehicle behavior prediction and automated data preprocessing pipelines demonstrate strong analytical thinking. Appreciate his dedication, approach, ethics and work"</p>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">AM</div>
+                            <div class="reviewer-info"><div class="reviewer-name">Professor Avijit Maji</div><div class="reviewer-title">Professor, Civil Engineering <br> Indian Institute of Technology Bombay</div></div>
+                        </div>
+                        <a href="YOUR_CERTIFICATE_LINK_HERE" target="_blank" rel="noopener noreferrer" class="btn-card-link" data-key="viewRecommendation">View Recommendation</a>
+                    </div>
+                    <div class="review-image"><img src="assets/AvijitMaji.png" alt="Professor Avijit Maji"></div>
+                </div>
+                <div class="review-item modal-trigger fade-in-section" data-modal-key="testimonialModal3">
+                    <div class="review-content">
+                        <h4 data-key="testimonial3Quote">An Excellent Student but more of self motivated researcher and technical person</h4>
+                        <p data-key="testimonial3Desc">"As Jaivik Jariwala's mentor for his final year projects at Pandit Deendayal Energy University, I was deeply impressed by his ability to translate complex theory, attempt more complexer research methodologies,learn from the lectures and take time-off to conduct his own research studies to write unique papers."</p>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">PG</div>
+                            <div class="reviewer-info"><div class="reviewer-name">Dr. Punit Gupta</div><div class="reviewer-title">Assistant Professor, Department of Computer Science And Engineering <br> Pandit Deendayal Energy University, Gandhinagar</div></div>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1RtAdcpQ4W2iu-TXh4TCTekrT6JTkL6v9/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-card-link" data-key="viewRecommendation">View Recommendation</a>
+                    </div>
+                    <div class="review-image"><img src="assets/PunitGupta.png" alt="Dr. Punit Gupta"></div>
+                </div>
+                <div class="review-item modal-trigger fade-in-section" data-modal-key="testimonialModal4">
+                    <div class="review-content">
+                        <h4 data-key="testimonial4Quote">Professional, Creative, and Results-Driven Intern</h4>
+                        <p data-key="testimonial4Desc">"Jaivik's autonomous surveillance Artificial Intelligence helped us acheived a market competition level and accuracy level in real-world deployment in Jammu & Kashmir. His technical Proficiency is truly impressive."</p>
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">MI</div>
+                            <div class="reviewer-info">
+                                <div class="reviewer-name">Maharshi Industries Private Limited</div>
+                                <div class="reviewer-title">Defence Technology Provider Indian Army</div>
+                            </div>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1xYYLQgsuJLP7DtIahOcYiUAjZcj8L0NH/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-card-link" data-key="viewRecommendation">View Recommendation</a>
+                    </div>
+                    <div class="review-image"><img src="assets/IA.png" alt="Maharshi Industries"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="blog-section">
+        <div class="container">
+            <div class="section-header fade-in-section">
+                <h2 data-key="blogTitle">Blog & Articles</h2>
+                <p data-key="blogSubtitle">Insights on AI, machine learning, and cutting-edge technology from my research and industry experience.</p>
+            </div>
+            <div class="blog-grid">
+                <div class="blog-item modal-trigger fade-in-section" data-modal-key="blogModal1">
+                    <div class="blog-image"><img src="assets/blog/defense.jpg" alt="AI in Defense"></div>
+                    <div class="blog-content">
+                        <h4 data-key="blog1Title">How Machine Learning is Changing the Defense Landscape</h4>
+                        <p data-key="blog1Desc">Exploring the implementation of AI surveillance systems in military applications and the impact of edge computing...</p>
+                        <div class="blog-meta"><span class="blog-date">Sep 12, 2025</span><span class="blog-category" data-key="blog1Category">Defense Tech</span></div>
+                    </div>
+                </div>
+                <div class="blog-item modal-trigger fade-in-section" data-modal-key="blogModal2">
+                    <div class="blog-image"><img src="assets/blog/automotive.jpg" alt="AI in Automotive Industry"></div>
+                    <div class="blog-content">
+                        <h4 data-key="blog2Title">The Rise of AI-Driven Cost Optimization in Automotive</h4>
+                        <p data-key="blog2Desc">Insights from developing RAG-based chatbots for the auto sector to achieve significant cost savings through intelligent analysis...</p>
+                        <div class="blog-meta"><span class="blog-date">Sep 05, 2025</span><span class="blog-category" data-key="blog2Category">Automotive AI</span></div>
+                    </div>
+                </div>
+                <div class="blog-item modal-trigger fade-in-section" data-modal-key="blogModal3">
+                     <div class="blog-image"><img src="assets/blog/strategy.jpg" alt="AI Strategy board"></div>
+                    <div class="blog-content">
+                        <h4 data-key="blog3Title">Key Steps Before Starting Your First AI Project</h4>
+                        <p data-key="blog3Desc">From data preparation to model deployment, a guide to the essential considerations for successful AI implementation...</p>
+                        <div class="blog-meta"><span class="blog-date">Aug 28, 2025</span><span class="blog-category" data-key="blog3Category">AI Strategy</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header fade-in-section">
+                <h2 data-key="servicesTitle">What I Can Do For You</h2>
+                <p data-key="servicesSubtitle">Leveraging my skills to provide cutting-edge solutions across various domains of AI and engineering.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-item modal-trigger fade-in-section" data-modal-key="serviceModal1">
+                    <div class="service-image"><img src="assets/python.png" alt="AI Development"></div>
+                    <div class="service-content">
+                        <div class="service-icon">🧠</div>
+                        <h3 data-key="service1Title">AI & Machine Learning Development</h3>
+                        <p data-key="service1Desc">Building custom machine learning models, deep learning architectures, and end-to-end AI systems for automation and intelligent decision-making.</p>
+                    </div>
+                </div>
+                <div class="service-item modal-trigger fade-in-section" data-modal-key="serviceModal2">
+                    <div class="service-image"><img src="assets/visual.png" alt="Computer Vision"></div>
+                    <div class="service-content">
+                        <div class="service-icon">📷</div>
+                        <h3 data-key="service2Title">Computer Vision & Imaging Systems</h3>
+                        <p data-key="service2Desc">Developing solutions that interpret visual data from cameras, thermal imagers, and other sensors to enable smart monitoring and analysis.</p>
+                    </div>
+                </div>
+                 <div class="service-item modal-trigger fade-in-section" data-modal-key="serviceModal3">
+                    <div class="service-image"><img src="assets/thesis.png" alt="Research"></div>
+                    <div class="service-content">
+                        <div class="service-icon">🎓</div>
+                        <h3 data-key="service3Title">Advanced AI Research</h3>
+                        <p data-key="service3Desc">Deeply fascinated by AI, I am motivated to pursue doctoral studies while contributing to impactful work and solving complex challenges in the industry.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header fade-in-section">
+                <h2 data-key="faqTitle">Frequently Asked Questions</h2>
+                <p data-key="faqSubtitle">Answers to common questions about my services, technical approach, and collaboration process.</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item fade-in-section">
+                    <div class="faq-question"><h4 data-key="faq1q">What technologies do you specialize in?</h4><div class="faq-toggle">+</div></div>
+                    <div class="faq-answer"><p data-key="faq1a">I specialize in ML frameworks (TensorFlow, PyTorch), computer vision (OpenCV, YOLOv8), robotics (ROS), and cloud platforms (AWS, Google Cloud). I also have deep experience with big data tools like Apache Spark and Kafka.</p></div>
+                </div>
+                <div class="faq-item fade-in-section">
+                    <div class="faq-question"><h4 data-key="faq2q">What kind of projects are you looking for?</h4><div class="faq-toggle">+</div></div>
+                    <div class="faq-answer"><p data-key="faq2a">I am actively looking for impactful, collaborative projects that push boundaries in AI, robotics, or data science. I thrive in curiosity-driven environments where I can tackle critical challenges with analytical rigor.</p></div>
+                </div>
+                <div class="faq-item fade-in-section">
+                    <div class="faq-question"><h4 data-key="faq3q">Can you work within our existing technical guidelines?</h4><div class="faq-toggle">+</div></div>
+                    <div class="faq-answer"><p data-key="faq3a">Absolutely. I have experience working within various technical constraints, from automotive industry standards to defense sector requirements. I can adapt to your existing tech stack, coding standards, and deployment environments.</p></div>
+                </div>
+                <div class="faq-item fade-in-section">
+                    <div class="faq-question"><h4 data-key="faq4q">How do we get started?</h4><div class="faq-toggle">+</div></div>
+                    <div class="faq-answer"><p data-key="faq4a">Simply reach out through the contact button or email me. We can schedule a call to discuss your project's requirements, timeline, and objectives. From there, I can provide a detailed proposal for your review.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content fade-in-section">
+                <h2 data-key="ctaTitle">Let's Build Something Great</h2>
+                <p data-key="ctaSubtitle">I am actively looking for collaborations to work on impactful projects. If you have a challenge that needs a data-driven, creative solution, let's connect.</p>
+                <button class="cta-btn" data-key="ctaButton">Get In Touch →</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header fade-in-section">
+                <h2 data-key="contactTitle">Get In Touch</h2>
+                <p data-key="contactSubtitle">Have a question or a project in mind? Feel free to reach out.</p>
+            </div>
+            <form action="https://formspree.io/f/mpwjgydq" method="POST" class="contact-form fade-in-section">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            <div class="contact-socials fade-in-section">
+                <a href="mailto:jaivikjariwalaworkspace@gmail.com" title="Email">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </a>
+                <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" title="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left"><p>jaivikjariwalaworkspace@gmail.com</p></div>
+                <div class="footer-center">
+                    <div class="footer-links">
+                        <a href="#home" data-key="navHome">Home</a>
+                        <a href="#work" data-key="navWork">Work</a>
+                        <a href="#projects" data-key="navProjects">Projects</a>
+                        <a href="#blog" data-key="navBlog">Blog</a>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="social-links">
+                        <a href="mailto:jaivikjariwalaworkspace@gmail.com" title="Email">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </a>
+                        <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                        <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" title="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-key="footerCredit">Designed, Developed & Maintained by Jaivik Jariwala</p>
+                <p data-key="footerRights">© 2025. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="modal-overlay" id="details-modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close-btn">&times;</button>
+            <div class="modal-header" id="modal-header">
+                <img src="" alt="Modal Image" id="modal-img">
+            </div>
+            <div class="modal-body">
+                <h2 id="modal-title"></h2>
+                <div class="meta" id="modal-subtitle"></div>
+                <div class="content" id="modal-content-body"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js\app.js"></script>
+</body>
+</html>
